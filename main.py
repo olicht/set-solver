@@ -1,3 +1,8 @@
-import set_video
+from config import *
 
-set_video.main()
+if video:
+	import set_video
+	set_video.main()
+else:
+	import tests
+	tests.main()
